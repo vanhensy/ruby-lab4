@@ -54,5 +54,5 @@ gem 'rails-assets-tether'
 gem 'puma'
 
 
-# Implement Fotawesome 
+# Implement Fotawesome
 gem 'font-awesome-sass'

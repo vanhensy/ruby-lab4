@@ -1,9 +1,9 @@
 <%= bootstrap_devise_error_messages! %>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4><%= t('.change_your_password', :default => 'Change your password') %></h4>
+<div class="card">
+  <div class="card-header">
+    <h4 class="text-sm-center"><%= t('.change_your_password', :default => 'Change your password') %></h4>
   </div>
-  <div class="panel-body">
+  <div class="card-block">
     <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put, role: "form" }) do |f| %>
       <%= f.hidden_field :reset_password_token %>
 
