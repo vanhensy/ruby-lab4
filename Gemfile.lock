@@ -201,6 +201,7 @@ DEPENDENCIES
   devise
   devise-bootstrap-views
   faye-websocket
+  font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)

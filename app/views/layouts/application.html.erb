@@ -9,7 +9,7 @@
 <body>
   <% if flash.any? %>
     <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key == 'error' ? 'danger' : 'info' %>"><%= value %></div>
+      <div id="alert-box" class="alert alert-<%= key == 'error' ? 'danger' : 'info' %>"><%= value %></div>
     <% end %>
   <% end %>
 <nav class="navbar navbar-light bg-faded">
@@ -19,14 +19,11 @@
   <ul class="nav navbar-nav pull-xs-right">
     
     <% if user_signed_in? %>
-      <%= li_link_to "Edit account", edit_user_registration_path %>
-      <%= li_link_to "Sign out", destroy_user_session_path, method: 'delete' %>
+      <%= li_link_to "Edit account", edit_user_registration_path, class:'btn btn-sm btn-secondary' %>
+      <%= li_link_to "Sign out", destroy_user_session_path, method: 'delete', class:'btn btn-sm btn-danger' %>
     <% else %>
       <%= li_link_to "Sign in", new_user_session_path, class:'btn btn-success btn-sm' %>
       <%= li_link_to "Create new account", new_user_registration_path, class:'btn btn-secondary btn-sm' %>
-    <% end %>
-    <% if user_signed_in? %>
-      <%= li_link_to "Users", root_path %>
     <% end %>
   </ul>
 </div>  
@@ -34,5 +31,11 @@
   <div class="container">
     <%= yield %>
   </div>
+
+  <script>
+    $("#alert-box").fadeTo(1000, 500).slideUp(500, function(){
+    $("#alert-box").alert('close');
+});
+</script>
 </body>
 </html>

@@ -1,6 +1,12 @@
-<h1>Home#index</h1>
-
-<%= render 'message' %>
+<div class="row text-xs-center">
+<div class="col-md-offset-2 col-md-8">
 <% if user_signed_in? %>
+	<div class="message-box card">
+	<%= render 'message' %>
+	</div>
+	<div class="message-input ">
 	<%= render 'new' %>
+	</div>
 <% end %>
+</div>
+</div>
