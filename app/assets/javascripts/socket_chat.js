@@ -5,7 +5,7 @@
   	console.log(message.data)
   	var data = JSON.parse(message.data)
   	var messageHtml = data.content
-  	$(".messages").append(messageHtml)
+  	$(".messages").append("<p>" + messageHtml + "</p>")
     console.log("received: ", messageHtml)
   };
 
