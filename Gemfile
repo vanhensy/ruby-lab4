@@ -50,9 +50,6 @@ end
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'devise-bootstrap-views'
-
-
-
 gem 'rails-assets-tether'
 gem 'puma'
 

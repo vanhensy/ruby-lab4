@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
 		message = Message.create message_params
 		message.user = current_user
 		message.save
-		redirect_to root_path
+		raise 'hi'
 	end
 
 	private
