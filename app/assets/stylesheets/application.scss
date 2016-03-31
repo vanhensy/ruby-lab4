@@ -22,4 +22,6 @@
 
 .message-box { 
 	min-height: 500px;
+	max-height:550px;
+	overflow: scroll;
 }
