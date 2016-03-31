@@ -50,12 +50,9 @@ end
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'devise-bootstrap-views'
-<<<<<<< HEAD
 gem 'rails-assets-tether'
 gem 'puma'
-=======
 
 
 # Implement Fotawesome 
 gem 'font-awesome-sass'
->>>>>>> 271f5100d11f070a124e7a475abd218325e24858

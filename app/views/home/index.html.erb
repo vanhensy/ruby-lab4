@@ -1,6 +1,7 @@
 <h1>Home#index</h1>
 
-<%= render 'message' %>
+
 <% if user_signed_in? %>
+	<%= render 'message' %>
 	<%= render 'new' %>
 <% end %>
