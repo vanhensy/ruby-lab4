@@ -13,19 +13,20 @@
     <% end %>
   <% end %>
 <nav class="navbar navbar-light bg-faded">
+
 <div class="container">
   <a class="navbar-brand" href="#"><i class="fa fa-forumbee"></i> CoderChat</a>
   <ul class="nav navbar-nav pull-xs-right">
     <%= li_link_to "Home", root_url %>
     <% if user_signed_in? %>
       <%= li_link_to "Edit account", edit_user_registration_path %>
-      <%= li_link_to "Sign out", destroy_user_registration_path, method: 'delete' %>
+      <%= li_link_to "Sign out", destroy_user_session_path, method: 'delete' %>
     <% else %>
       <%= li_link_to "Sign in", new_user_session_path, class:'btn btn-success btn-sm' %>
       <%= li_link_to "Create new account", new_user_registration_path, class:'btn btn-secondary btn-sm' %>
     <% end %>
     <% if user_signed_in? %>
-      <%= li_link_to "Users", users_path %>
+      <%= li_link_to "Users", root_path %>
     <% end %>
   </ul>
 </div>  
