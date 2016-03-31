@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chatdemo</title>
+  <title>CoderChat | Group 1</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,24 +13,23 @@
     <% end %>
   <% end %>
 <nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <ul class="nav navbar-nav">
-    <%= li_link_to "Home", root_url %>
+
+<div class="container">
+  <a class="navbar-brand" href="#"><i class="fa fa-forumbee"></i> CoderChat</a>
+  <ul class="nav navbar-nav pull-xs-right">
+    
     <% if user_signed_in? %>
       <%= li_link_to "Edit account", edit_user_registration_path %>
       <%= li_link_to "Sign out", destroy_user_session_path, method: 'delete' %>
     <% else %>
-      <%= li_link_to "Sign in", new_user_session_path %>
-      <%= li_link_to "Sign up", new_user_registration_path %>
+      <%= li_link_to "Sign in", new_user_session_path, class:'btn btn-success btn-sm' %>
+      <%= li_link_to "Create new account", new_user_registration_path, class:'btn btn-secondary btn-sm' %>
     <% end %>
     <% if user_signed_in? %>
       <%= li_link_to "Users", root_path %>
     <% end %>
   </ul>
-  <form class="form-inline pull-xs-right">
-    <input class="form-control" type="text" placeholder="Not implemented yet...">
-    <button class="btn btn-success-outline" type="submit">Search</button>
-  </form>
+</div>  
 </nav>
   <div class="container">
     <%= yield %>
