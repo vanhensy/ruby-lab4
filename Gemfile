@@ -52,3 +52,4 @@ source 'https://rails-assets.tenex.tech' do
   gem 'rails-assets-tether'
 end
 gem 'devise-bootstrap-views'
+gem "font-awesome-rails"
