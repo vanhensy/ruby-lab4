@@ -52,3 +52,7 @@ source 'https://rails-assets.tenex.tech' do
   gem 'rails-assets-tether'
 end
 gem 'devise-bootstrap-views'
+
+
+# Implement Fotawesome 
+gem 'font-awesome-sass'
