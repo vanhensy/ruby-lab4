@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'rb-readline'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use postgresql as the database for Active Record
@@ -22,7 +22,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'simple_form'
+gem 'faye-websocket'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -48,8 +49,12 @@ end
 
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-source 'https://rails-assets.tenex.tech' do
-  gem 'rails-assets-tether'
-end
 gem 'devise-bootstrap-views'
-gem "font-awesome-rails"
+
+
+gem 'rails-assets-tether'
+gem 'puma'
+
+
+# Implement Fotawesome
+gem 'font-awesome-sass'
