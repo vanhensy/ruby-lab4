@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
+gem 'faye-websocket'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -48,7 +49,6 @@ end
 
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
-source 'https://rails-assets.tenex.tech' do
-  gem 'rails-assets-tether'
-end
 gem 'devise-bootstrap-views'
+gem 'rails-assets-tether'
+gem 'puma'

@@ -33,3 +33,8 @@ module Chatdemo
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
+
+# file: config/application.rb
+
+    require 'chat_backend'
+    Rails.configuration.middleware.use ChatBackend
