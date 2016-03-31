@@ -1,12 +1,13 @@
-<div style="display:none;">
+<div style="display:none">
 <%= simple_form_for Message.new do |f| %>
   <%= f.input :content, class:'form-control' %>
   <%= f.button :submit %>
 <% end %></div>
-<form class="form-inline">
+
+<form action="/messages" method="post" class="form-inline">
   <div class="form-group" style="width: 80%">
     <label class="sr-only" for="">Email address</label>
-    <input type="text" class="form-control" id="" placeholder="Enter your message" style="width: 100%">
+    <input type="text" name="message[content]" class="form-control" id="" placeholder="Enter your message" style="width: 100%">
   </div>
   <button type="submit" class="btn btn-primary" style="width:19.3%"><i class="fa fa-send"></i> Send</button>
 </form>
