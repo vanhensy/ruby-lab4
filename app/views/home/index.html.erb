@@ -1,12 +1,18 @@
 
-<div class="row text-xs-center">
+<div class="row">
 <div class="col-md-offset-2 col-md-8">
 <% if user_signed_in? %>
 	<div class="message-box card">
+	<div class="card-block slideInUp">
 	<%= render 'message' %>
+	</div>
 	</div>
 	<div class="message-input ">
 	<%= render 'new' %>
 	</div>
 <% end %>
 </div>
+
+<script type="text/javascript">
+	
+</script>
