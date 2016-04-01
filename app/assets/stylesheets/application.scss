@@ -72,3 +72,19 @@
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
+
+
+
+.index-intro { 
+	img { 
+		width: 100%;
+	}
+	h2 {
+		margin-top: -100px;
+		text-transform: uppercase;
+		color: #7f8c8d;
+		font-size: 25px;
+		font-family: 'Varela Round', sans-serif;
+		font-weight: bold; 
+	}
+}
