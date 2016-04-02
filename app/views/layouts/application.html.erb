@@ -4,6 +4,7 @@
   <title>CoderChat | Group 1</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,7 +16,7 @@
 <nav class="navbar navbar-light bg-faded">
 
 <div class="container">
-  <%= link_to root_path, class: "navbar-brand" do %>
+  <%= link_to root_path, class: "bounceIn navbar-brand" do %>
     <i class="fa fa-forumbee"></i> CoderChat
   <% end %>
   <ul class="nav navbar-nav pull-xs-right">
@@ -30,7 +31,7 @@
   </ul>
 </div>
 </nav>
-  <div class="container">
+  <div class="container ">
     <%= yield %>
   </div>
 

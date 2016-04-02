@@ -1,3 +1,4 @@
+
 <div class="row text-xs-center">
   <div class="col-md-offset-2 col-md-8">
     <% if user_signed_in? %>
@@ -10,3 +11,27 @@
     <% end %>
   </div>
 </div>
+
+
+<div class="row">
+<div class="col-md-offset-2 col-md-8">
+<% if user_signed_in? %>
+	<div class="message-box card">
+	<div class="card-block ">
+	<%= render 'message' %>
+	</div>
+	</div>
+	<div class="message-input ">
+	<%= render 'new' %>
+	</div>
+<% else %>
+<div class="index-intro col-md-12 text-xs-center">
+<img src="https://d13yacurqjgara.cloudfront.net/users/45010/screenshots/2038821/chat_love.gif"/>
+<h2>Chat corner for coders at coderschool </h2>
+</div>
+<% end %>
+</div>
+
+<script type="text/javascript">
+
+</script>

@@ -1,12 +1,14 @@
-<div style="display:none;">
-<%= simple_form_for Message.new do |f| %>
-  <%= f.input :content, class:'form-control' %>
-  <%= f.button :submit %>
-<% end %></div>
-<form class="form-inline">
-  <div class="form-group" style="width: 80%">
-    <label class="sr-only" for="">Email address</label>
-    <input type="text" class="form-control" id="" placeholder="Enter your message" style="width: 100%">
-  </div>
-  <button type="submit" class="btn btn-primary" style="width:19.3%"><i class="fa fa-send"></i> Send</button>
-</form>
+<%= form_for(Message.new, :html => {:class => 'form-inline'}, :remote => 'true') do |f| %> 
+<div class="form-group" style="width: 100%"> 
+	<div class="input-group" style="width: 100%">
+		<%= f.text_field :content, class:"form-control", style: 'height:45px;', autocomplete: 'off' %>
+		<div class="input-group-addon" style="width: 100px;">
+			<button type="submit" class="btn btn-sm btn-success"><i class="fa fa-send"></i> Send </button>
+		</div>
+	</div>
+</div>
+<% end %>
+
+
+
+ 

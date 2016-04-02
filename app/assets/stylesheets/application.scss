@@ -1,7 +1,7 @@
 @import "bootstrap";
-
- @import "font-awesome-sprockets";
-  @import "font-awesome";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "animate";
 
 .navbar {
   margin-bottom: 30px;
@@ -21,5 +21,70 @@
 }
 
 .message-box { 
-	min-height: 500px;
+	height:400px;
+	overflow: scroll;
+}
+
+.talk-bubble {
+	margin: 15px;
+  	display: inline-block;
+  	position: relative;
+	max-width: 400px;
+	height: auto;
+	background-color: #3498db;
+	border-radius : 10px; 
+	margin-bottom: 0px ;
+}
+
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: -8px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -10px;
+	right: auto;
+  top: 0px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: #3498db transparent transparent transparent;
+}
+
+.talktext{
+  padding: 10px 15px;
+	text-align: left;
+  line-height: 1.5em;
+  color: #fff;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+
+
+.index-intro { 
+	img { 
+		width: 100%;
+	}
+	h2 {
+		margin-top: -100px;
+		text-transform: uppercase;
+		color: #7f8c8d;
+		font-size: 25px;
+		font-family: 'Varela Round', sans-serif;
+		font-weight: bold; 
+	}
 }
